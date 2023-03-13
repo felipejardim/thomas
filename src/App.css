@@ -30,4 +30,5 @@ iframe{
 
 #algo{
   /* display: none; */
+  max-width: 300px;
 }
