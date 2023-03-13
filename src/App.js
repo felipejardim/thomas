@@ -7,6 +7,7 @@ import { faCirclePlay, faCircleChevronLeft, faCircleChevronRight } from '@fortaw
 import { useEffect, useState } from 'react';
 
 function App() {
+  // eslint-disable-next-line
   const srcTest = ['gjLptl3TEeM', 'OfR6_V91fG8', '4tppVMG7rHM']
 
   const [music, setMusic] = useState(srcTest[0])
@@ -15,7 +16,7 @@ function App() {
   useEffect(()=>{
     setMusic(srcTest[count%srcTest.length]);
     console.log("teste")
-  })
+  }, [srcTest, count] )
 
 
   return (

@@ -9,7 +9,7 @@ export default function Yt(props){
     return(
         <>
             <div id="algo">
-                <YouTube videoId={props.src}  opts={{playerVars:{autoplay: 1}}} onStateChange={e=>{if(0 == e.target.getPlayerState()){props.terminou()}}} />
+                <YouTube videoId={props.src}  opts={{playerVars:{autoplay: 1}}} onStateChange={e=>{if(0 === e.target.getPlayerState()){props.terminou()}}} />
             </div>
         </>
     )
