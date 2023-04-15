@@ -19,7 +19,7 @@ function App() {
   }, [srcTest, count] )
 
 
-  return (
+  return (!document.location.search ?
   <>
     <header>
       <p>Thomas</p>
@@ -59,6 +59,10 @@ function App() {
         <FontAwesomeIcon icon={faCircleChevronRight} />
       </a>
     </footer>
+  </> : <>
+    <h1>copie o texto e feche a aba</h1>
+    <p>{document.location.search.slice(document.location.search.search('=')+1)}</p>
+    <button onClick={()=>{window.close()}}>fechar aba chata</button>
   </>
   );
 }
