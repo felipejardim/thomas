@@ -41,6 +41,8 @@ function App() {
         <li>talvez no seu navegador (Firefox provavelmente terá esse comportamento) carregará o primeiro vídeo pausado, porém basta dar play ou clicar em "mudar" que o comportamento descrito acima deve se manter</li>    
         <li>obviamente os botões em baixo não funcionam :)</li>
       </ul>
+      <h4>privacidade</h4>
+      <p>Ao usar esse site você concorda com os termos das ferramentas externas utilizadas aqui (como os termos de uso do YouTube e Spotify). O site não armazena nenhum dado e sequer tentará coletar dados por si prórpio, o mesmo não poderá ser dito pelas APIs usadas e deve ser consultadas para entender o que é armazenado e compartilhado para terceiros.</p>
     </div>
 
     <Spot />
